@@ -1,13 +1,13 @@
 import streamlit as st
 
-st.title('Calculadora de Custos de Produção')
-
-# Configurações da página
+# Configurações da página - DEVE ser a primeira chamada Streamlit
 st.set_page_config(
     page_title="Calculadora de Custos",
-    page_icon="💰",
+    page_icon="",
     layout="wide"
 )
+
+st.title('Calculadora de Custos de Produção')
 
 # Função para validar entrada numérica
 def validar_numero(valor, min_valor=0.0):
